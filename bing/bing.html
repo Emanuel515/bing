@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bing.com</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+	<div class="content"></div>
+	<div class="nav-wrapper">
+		<div class="leftside-nav">
+			<div class="nav-link-wrapper">
+				<a href="bing.html">Home</a>
+			</div>
+			<div class="nav-link-wrapper">
+				<a href="About.html">About</a>
+			</div>
+		</div>
+		<div class="Right-side">Emmanuel too</div>
+	</div>
+		<div class="body">
+			<div class="body-item-wrapper">
+				<div class="background-image" style="background-image: url(images/1.jpg);"></div>
+				<div class="image-text-wrapper">we are the world</div>
+			</div>
+			<div class="body-item-wrapper">
+				<div class="background-image" style="background-image: url(images/2.jpg);"></div>
+				<div class="image-text-wrapper">we are the world</div>
+			</div>
+			<div class="body-item-wrapper">
+				<div class="background-image" style="background-image: url(images/3.jpg);"></div>
+				<div class="image-text-wrapper">we are the world</div>
+			</div>
+			<div class="body-item-wrapper">
+				<div class="background-image" style="background-image: url(images/4.jpg);"></div>
+				<div class="image-text-wrapper">we are the world</div>
+			</div>
+			<div class="body-item-wrapper">
+				<div class="background-image" style="background-image: url(images/5.jpg);"></div>
+				<div class="image-text-wrapper">we are the world</div>
+			</div>
+			<div class="body-item-wrapper">
+				<div class="background-image" style="background-image: url(images/6.jpg);"></div>
+				<div class="image-text-wrapper">we are the world</div>
+			</div>
+			<div class="body-item-wrapper">
+				<div class="background-image" style="background-image: url(images/7.jpg);"></div>
+				<div class="image-text-wrapper">we are the world</div>
+			</div>
+			<div class="body-item-wrapper">
+				<div class="background-image" style="background-image: url(images/8.jpg);"></div>
+				<div class="image-text-wrapper">we are the world</div>
+			</div>
+			<div class="body-item-wrapper">
+				<div class="background-image" style="background-image: url(images/9.jpg);"></div>
+				<div class="image-text-wrapper">we are the world</div>
+			</div>
+			<div class="body-item-wrapper">
+				<div class="background-image" style="background-image: url(images/10.jpg);"></div>
+				<div class="image-text-wrapper">we are the world</div>
+			</div>
+			<div class="body-item-wrapper">
+				<div class="background-image" style="background-image: url(images/11.jpg);"></div>
+				<div class="image-text-wrapper">we are the world</div>
+			</div>
+			<div class="body-item-wrapper">
+				<div class="background-image" style="background-image: url(images/12.jpg);"></div>
+				<div class="image-text-wrapper">we are the world</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+</body>
+<script>
+	const body = document.querySelectorAll('.body-item-wrapper')
+
+	body.forEach(bodyitem => {
+		
+		bodyitem.addEventListener('mouseover', () => {
+			console.log(bodyitem.childNodes[1].classList);
+			bodyitem.childNodes[1].classList.add('img-darken');
+		})
+		bodyitem.addEventListener('mouseout', () => {
+			console.log(bodyitem.childNodes[1].classList);
+			bodyitem.childNodes[1].classList.remove('img-darken');
+		})
+	})
+</script>
+</html>
